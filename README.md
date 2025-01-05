@@ -1,9 +1,9 @@
 # Clonación de la Interfaz de Google con HTML y CSS
 
 ## ÍNDICE
-* [:sparkles: 1. Qué construí](https://github.com/valentechie/clon_de_Google/edit/main/README.md#2-qu%C3%A9-constru%C3%AD)
-* [:sparkles: 2. Objetivo del proyecto](https://github.com/valentechie/clon_de_Google/edit/main/README.md#3-objetivo-del-proyecto)
-* [:sparkles: 3. Demo](https://github.com/valentechie/clon_de_Google/edit/main/README.md#4-demo-versi%C3%B3n-escritorio)
+* [:sparkles: 1. Qué construí](https://github.com/valentechie/clon_de_Google/blob/main/README.md#1-qu%C3%A9-constru%C3%AD)
+* [:sparkles: 2. Objetivo del proyecto](https://github.com/valentechie/clon_de_Google/blob/main/README.md#2-objetivo-del-proyecto)
+* [:sparkles: 3. Demo](https://github.com/valentechie/clon_de_Google/blob/main/README.md#3-demo-versi%C3%B3n-escritorio)
 
 ****
 ## 1. Qué construí
