@@ -1,4 +1,4 @@
-# Clonación de la Interfaz de Google con HTML y CSS
+# Cloning the Google UI with HTML and CSS
 
 <!---
 ## ÍNDICE
