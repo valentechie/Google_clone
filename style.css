@@ -4,7 +4,7 @@
 }
 
 body { 
-    background-image: url(media/fondo.png);
+    background-image: url(fondo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,7 +131,7 @@ body {
     height: 130px;
     border-radius: 4px;
     background-color: #D7EE49;
-    background-image: url(media/img.png);
+    background-image: url(img.png);
     padding: 9px;
   }
   
@@ -155,4 +155,5 @@ body {
   .description {
     line-height: 1.375;
   }
+
    
