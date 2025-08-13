@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <script src="script.js" type="text/javascript"></script>
+  <title>Calculadora</title>
+</head>
+
+<body>
+  <div class="card">
+		<div class="header">
+			<div class="image">
+			</div>
+			<div class="date">
+				<span>Valentina Arminta   /ᐠ｡ꞈ｡ᐟ\</span>
+			</div>
+		</div>
+		<div class="info">
+			<div rel="noopener noreferrer" href="#" class="block">
+				<span class="title">Calculadora hecha con JavaScript, css y html</span>
+      </div>
+			<p class="description">Proyecto elaborado con la guía de los mentores del club de otoño 2023.</p>
+		</div>
+	</div>
+
+
+
+  <div class="calcuContainer">
+    <div class="calculadora">
+      <center>
+        <h1>CALCULADORA</h1>
+      </center>
+      <div>
+
+        <form id="myform">
+          <center>
+
+            <div>
+              <input type="text" id="resultado" class="result">
+              
+            </div>
+
+            <div>
+            <label for="valor1"></label>
+            <input type="number" id="valor1" class="input" placeholder="1. Numero...">
+            <label for="valor2"></label>
+            <input type="number" id="valor2" class="input" placeholder="2. Numero...">
+            </div>
+
+            <div>
+              <button type="button" class="button" id="+" onclick="sumar()">
+                Sumar
+              </button>
+              <button type="button" class="button" id="-" onclick="resta()">
+                Restar
+              </button>
+
+              <div>
+                <button type="button" class="button" onclick="multiplicar()" id="*">
+                  Multiplicar
+                </button>
+                <button type="button" class="button" id="/" onclick="dividir()">
+                  Dividir
+                </button>
+              </div>
+
+              <button type="button" class="igual" id="borrar" onclick="limpiar()">
+                Borrar
+              </button>
+
+
+
+            </div>
+
+          </center>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
