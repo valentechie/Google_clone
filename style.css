@@ -4,156 +4,146 @@
 }
 
 body { 
-    background-image: url(fondo.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background-image: url(media/fondo.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 85vh;
+}
+
+.card {
+  padding: 10px;
+  max-width: 240px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: #EB4485;
+  font-family: serif;
+  margin: 60px;
+}
+
+.image {
+  width: 220px;
+  height: 130px;
+  border-radius: 4px;
+  background-color: #D7EE49;
+  background-image: url(media/img.png);
+  padding: 9px;
+}
+
+.name {
+  display: flex;
+  font-size: 0.75rem;                            
+  line-height: 1rem;
+  align-items: center;
+  margin: 2px;
+}
+
+.title {
+  display: block;
+  font-size: 1.25rem;                            
+  line-height: 1.35rem;
+  font-weight: 600;                              
+  padding-bottom: 5px;
+  padding-top: 14px;
+}
+
+.description {
+  line-height: 1.375;                            
+}
+
+.calcuContainer {
+  background-color: #E4DDDD;
+  margin: 30px;
+  padding: 20px;
+  border-radius: 32px;
+  box-shadow: 0px 0px 0px 3px #cf3561;
+  height: auto;
+  width: 480px;
+  max-width: 98vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculadora h1 {
+  color: #000000;
+  font-size: 2.7em;
+  text-align: center;
+  margin-left: 0;
+  text-shadow: 0px 1px #c2189474;
+}
+
+/* Estilos de los campos para ingresar números */
+.calculadora input[type="number"] {
+    background-color: #5855A0;                  /* Fondo azul/lila */
+    width: 180px;                               /* Ancho del campo */
+    margin: 20px 10px;                          /* Espaciado externo */
+    color: #ffffff;                             /* Texto blanco */
+    font-weight: 500;                           /* Texto más grueso */
+    font-size: 23px;                            /* Tamaño grande */
+    height: 50px;                               /* Altura */
+    border-radius: 12px;                        /* Bordes redondeados */
+    padding-left: 14px;                         /* Espaciado interno izquierdo */
+    border: none;                               /* Sin borde */
+    border-bottom: 2px solid #000000;           /* Línea inferior negra */
+    outline: none;                              /* Sin borde al enfocar */
+}
+
+/* Color de los placeholders en los campos de número (compatibilidad navegadores) */
+::-webkit-input-placeholder { color: #E4DDDD; }
+::-moz-placeholder { color: #E4DDDD; }
+
+/* Pantalla de resultado: campo de texto estilizado */
+.calculadora input[type="text"] {
+    background-color: #EB4485;                  /* Fondo rosado */
+    border: none;                               /* Sin borde */
+    border-radius: 22px;                        /* Bordes redondeados */
+    height: 80px;                               /* Altura grande */
+    margin: 10px 0;                             /* Espaciado vertical */
+    padding-left: 15px;                         /* Espaciado izquierdo */
+    color: #ffffff;                             /* Texto blanco */
+    font-size: 2.7em;                           /* Tamaño extra grande */
+    width: 400px;                               /* Ancho amplio */
+    max-width: 90vw;                            /* No excede ancho en pantallas pequeñas */
+    box-shadow: 0 0px 0px 3px white;            /* Sombra blanca alrededor */
+}
+
+/* Contenedor de los botones de la calculadora, organizados y con espacio entre ellos */
+.botones {
     display: flex;
+    flex-wrap: wrap;                            /* Permite que los botones bajen a la siguiente línea */
     justify-content: center;
-    align-items: center;
-    height: 100%;
-  }
-  .calcuContainer {
-    background-color: #E4DDDD;
-    margin: 30px;
-    padding: 5px;
-    border-radius: 32px;
-    box-shadow: 0px 0px 0px 3px #cf3561;
-    height: 460px;
-    width: 390px;
-  
-  }
-  .calculadora h1 {
-    color: #000000;
-    font-size: 2.3em;
-    margin-left: 5px;  text-shadow: 0px 1px #c2189474;
-  }
-  .calculadora  {
-    color: #5855A0;
-    font-size: 12px;
-  }
-  .calculadora input[type="number"] {
-    background-color: #5855A0;
-    width: 120px;
-    margin: 20px;
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 15px;
-    height: 40px;
-    border-radius: 10px;
-    padding-left: 10px;
-    border: none;
-    border-bottom: 1px solid #000000;
-    outline: none;
-  }
-  
-  ::-webkit-input-placeholder { color: #E4DDDD; } /* WebKit */
-  ::-moz-placeholder { color: #E4DDDD; } /* Firefox 19+ */
+    gap: 18px;                                  /* Espacio entre botones */
+}
 
-  .calculadora input[type="text"] {
-    background-color: #EB4485;
-    border: none;
-    border-radius: 22px;
-    height: 70px;
-    margin: 5px;
-    padding-left: 15px;
-    color: #ffffff;
-    font-size: xx-large;
-    width: 300px;
-    box-shadow: 0 0px 0px 3px white;
-  }
-  
-  .igual {
-    margin: 15px;
-    width: 150px;
-    height: 50px;
-    background-color: #D7EE49;
-    border: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0px 0px 1.5px #EB4485;
-    color: #EB4485;
-    font-size: 18px ;
-  }
-  
-  .button {
-    outline: none;
-    color: #EB4485;
-    font-size: 19px;
-    width: 150px;
-    height: 50px;
+/* Estilos de los botones de operación y el de borrar */
+.button, .igual {
+    outline: none;                              /* Sin borde al enfocar */
+    color: #EB4485;                             /* Texto rosado */
+    font-size: 1.4em;                           /* Tamaño grande */
+    width: 180px;                               /* Ancho del botón */
+    height: 58px;                               /* Altura del botón */
     text-align: center;
-    border: 2px dashed #EB4485;
-    border-radius: 15px;
-    background-color: #D7EE49;
-    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
-    transition: .1s ease-in-out, .4s color;
-    margin: 10px;
-  }
+    border: 2px dashed #EB4485;                 /* Borde rosado, línea punteada */
+    border-radius: 15px;                        /* Bordes redondeados */
+    background-color: #D7EE49;                  /* Fondo amarillo verdoso */
+    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5); /* Sombra doble */
+    transition: .1s ease-in-out, .4s color;     /* Transición suave para color y sombra */
+    margin: 10px 0;                             /* Espaciado vertical */
+}
 
-  button:active {
-    transform: translateX(0.1em) translateY(0.1em);
-    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
-  }
+/* Estilo especial para el botón de borrar (igual) */
+.igual {
+    background-color: #D7EE49;                  /* Fondo igual que los botones */
+    color: #EB4485;                             /* Texto rosado */
+    border: 2px dashed #EB4485;                 /* Borde rosado */
+}
 
-  .clear {
-    margin: 80px;
-    background: #a829c400;
-    border: none;
-    color: rgb(233, 215, 215);
-    font-size: 15px;
-    text-align: center;
-    border:none;
-    border-radius:10px;
-    background: #08080899;
-    padding: 10px;
-  }
- 
-  .card {
-    padding: 10px;
-    max-width: 240px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    background-color: #EB4485;
-    font-family: serif;
-    margin: 60px;
-  }
-  
-  .content {
-    margin-top: 1rem;
-  }
-  
-  .content .header {
-    margin-top: 0.5rem;
-  }
-  
-  .image {
-    width: 220px;
-    height: 130px;
-    border-radius: 4px;
-    background-color: #D7EE49;
-    background-image: url(img.png);
-    padding: 9px;
-  }
-  
-  .date {
-    display: flex;
-    font-size: 0.75rem;
-    line-height: 1rem;
-    align-items: center;
-    margin: 2px;
-  }
-  
-  .title {
-    display: block;
-    font-size: 1.25rem;
-    line-height: 1.35rem;
-    font-weight: 600;
-    padding-bottom: 5px;
-    padding-top: 14px;
-  }
-  
-  .description {
-    line-height: 1.375;
-  }
-
-   
+/* Efecto visual al presionar cualquier botón */
+button:active {
+    transform: translateX(0.1em) translateY(0.1em);  /* Se mueve ligeramente al hacer clic */
+    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5); /* Sombra ajustada */
+}
