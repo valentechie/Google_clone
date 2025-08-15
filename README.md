@@ -29,7 +29,9 @@ El diseño es responsivo y colorido, pensado para ser amigable y fácil de usar.
 
 ## 🎬 Demostración
 
-![Demo Calculadora](media/demo.gif)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/95f322f3-e2be-49fb-bdb8-ac52dbf177ce" />
+</p>
 
 👉 Prueba la calculadora en línea [aquí](https://valentechie.github.io/calculadora/)
 
@@ -92,6 +94,7 @@ start index.html      # Windows
 ## 🎓 Contexto del proyecto
 
 Este proyecto fue realizado como parte de la formación en el **Club BeeReal virtual - Edición otoño 2023**, siguiendo la guía de los mentores.  
+
 El objetivo es reforzar conocimientos de desarrollo web, lógica de programación y diseño visual con tecnologías modernas y accesibles.
 
 Agradezco a los mentores y compañeras del **Club de Chicas Programadoras** por su apoyo y guía.
