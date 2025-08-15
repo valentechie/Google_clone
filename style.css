@@ -64,6 +64,7 @@ body {
   width: 480px;
   max-width: 98vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -76,74 +77,157 @@ body {
   text-shadow: 0px 1px #c2189474;
 }
 
-/* Estilos de los campos para ingresar números */
-.calculadora input[type="number"] {
-    background-color: #5855A0;                  /* Fondo azul/lila */
-    width: 180px;                               /* Ancho del campo */
-    margin: 20px 10px;                          /* Espaciado externo */
-    color: #ffffff;                             /* Texto blanco */
-    font-weight: 500;                           /* Texto más grueso */
-    font-size: 23px;                            /* Tamaño grande */
-    height: 50px;                               /* Altura */
-    border-radius: 12px;                        /* Bordes redondeados */
-    padding-left: 14px;                         /* Espaciado interno izquierdo */
-    border: none;                               /* Sin borde */
-    border-bottom: 2px solid #000000;           /* Línea inferior negra */
-    outline: none;                              /* Sin borde al enfocar */
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
 }
 
-/* Color de los placeholders en los campos de número (compatibilidad navegadores) */
+.calculadora input[type="number"] {
+    background-color: #5855A0;
+    width: 180px;
+    margin: 10px 10px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 23px;
+    height: 50px;
+    border-radius: 12px;
+    padding-left: 14px;
+    border: none;
+    border-bottom: 2px solid #000000;
+    outline: none;
+}
+
 ::-webkit-input-placeholder { color: #E4DDDD; }
 ::-moz-placeholder { color: #E4DDDD; }
 
-/* Pantalla de resultado: campo de texto estilizado */
 .calculadora input[type="text"] {
-    background-color: #EB4485;                  /* Fondo rosado */
-    border: none;                               /* Sin borde */
-    border-radius: 22px;                        /* Bordes redondeados */
-    height: 80px;                               /* Altura grande */
-    margin: 10px 0;                             /* Espaciado vertical */
-    padding-left: 15px;                         /* Espaciado izquierdo */
-    color: #ffffff;                             /* Texto blanco */
-    font-size: 2.7em;                           /* Tamaño extra grande */
-    width: 400px;                               /* Ancho amplio */
-    max-width: 90vw;                            /* No excede ancho en pantallas pequeñas */
-    box-shadow: 0 0px 0px 3px white;            /* Sombra blanca alrededor */
+   pointer-events: none;
+  background-color: #EB4485;
+  border: none;
+  border-radius: 22px;
+  height: 80px;
+  margin: 10px 0;
+  padding-left: 15px;
+  color: #ffffff;
+  font-size: 2.7em;
+  width: 400px;
+  max-width: 90vw;
+  box-shadow: 0 0px 0px 3px white;
+  display: block;
+  margin: 10px auto;
 }
 
-/* Contenedor de los botones de la calculadora, organizados y con espacio entre ellos */
-.botones {
-    display: flex;
-    flex-wrap: wrap;                            /* Permite que los botones bajen a la siguiente línea */
-    justify-content: center;
-    gap: 18px;                                  /* Espacio entre botones */
+.button, .borrar {
+  outline: none;
+  color: #EB4485;
+  font-size: 1.4em;
+  width: 180px;
+  height: 58px;
+  text-align: center;
+  border: 2px dashed #EB4485;
+  border-radius: 15px;
+  background-color: #D7EE49;
+  box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+  transition: .1s ease-in-out, .4s color;
+  margin: 10px 0;
 }
 
-/* Estilos de los botones de operación y el de borrar */
-.button, .igual {
-    outline: none;                              /* Sin borde al enfocar */
-    color: #EB4485;                             /* Texto rosado */
-    font-size: 1.4em;                           /* Tamaño grande */
-    width: 180px;                               /* Ancho del botón */
-    height: 58px;                               /* Altura del botón */
-    text-align: center;
-    border: 2px dashed #EB4485;                 /* Borde rosado, línea punteada */
-    border-radius: 15px;                        /* Bordes redondeados */
-    background-color: #D7EE49;                  /* Fondo amarillo verdoso */
-    box-shadow: 0 0 0 4px #EADDCA, 2px 2px 4px 2px rgba(0, 0, 0, 0.5); /* Sombra doble */
-    transition: .1s ease-in-out, .4s color;     /* Transición suave para color y sombra */
-    margin: 10px 0;                             /* Espaciado vertical */
+.borrar {
+  background-color: #D7EE49;
+  color: #EB4485;
+  border: 2px dashed #EB4485;
 }
 
-/* Estilo especial para el botón de borrar (igual) */
-.igual {
-    background-color: #D7EE49;                  /* Fondo igual que los botones */
-    color: #EB4485;                             /* Texto rosado */
-    border: 2px dashed #EB4485;                 /* Borde rosado */
-}
-
-/* Efecto visual al presionar cualquier botón */
 button:active {
-    transform: translateX(0.1em) translateY(0.1em);  /* Se mueve ligeramente al hacer clic */
-    box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5); /* Sombra ajustada */
+  transform: translateX(0.1em) translateY(0.1em);
+  box-shadow: 0 0 0 4px #EADDCA, 1.5px 1.5px 2.5px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Pantallas menores a 900px: calculadora más grande, tarjeta más pequeña */
+@media (max-width: 900px) {
+  .calcuContainer {
+    width: 90vw;
+    padding: 15px;
+    margin: 20px;
+  }
+  .card {
+    margin: 20px;
+    max-width: 180px;
+    font-size: 0.9em;
+  }
+  .image {
+    width: 150px;
+    height: 90px;
+  }
+}
+
+/* Pantallas menores a 600px: oculta la tarjeta, calculadora ocupa casi todo */
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0;
+  }
+  .card {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+  .calcuContainer {
+    width: 98vw;
+    max-width: 99vw;
+    margin: 0;
+    padding: 10px;
+    border-radius: 18px;
+    box-shadow: 0px 0px 0px 2px #cf3561;
+  }
+  .calculadora h1 {
+    font-size: 2em;
+  }
+  .calculadora input[type="text"] {
+    width: 95vw;
+    font-size: 2em;
+    height: 60px;
+  }
+  .calculadora input[type="number"] {
+    width: 95vw;
+    font-size: 1.3em;
+    height: 40px;
+    margin: 8px auto;
+    display: block;
+  }
+  .botones {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+  }
+  .button, .borrar {
+    width: 95vw;
+    font-size: 1.15em;
+    height: 45px;
+    margin: 6px auto;
+    display: block;
+  }
+}
+
+/* Pantallas super pequeñas (<400px): aún más compacto */
+@media (max-width: 400px) {
+  .calcuContainer {
+    padding: 5px;
+    border-radius: 7px;
+  }
+  .calculadora input[type="text"], .button, .borrar, .calculadora input[type="number"] {
+    width: 98vw;
+    font-size: 1em;
+    padding: 5px;
+  }
+  .calculadora h1 {
+    font-size: 1.3em;
+  }
 }

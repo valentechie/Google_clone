@@ -34,17 +34,16 @@
         
         <!-- Formulario que contiene los campos y botones de la calculadora -->
         <form id="myform" autocomplete="off">
-          <!-- Pantalla donde se muestra el resultado, solo lectura -->
-          <input type="text" id="resultado" class="result" aria-label="Resultado" readonly>
-          <input type="number" id="valor1" class="input" placeholder="1. Número..." aria-label="Primer número">
-          <input type="number" id="valor2" class="input" placeholder="2. Número..." aria-label="Segundo número">
-          
           <div class="botones">
+            <input type="text" id="resultado" class="result" aria-label="Resultado" readonly>
+            <input type="number" id="valor1" class="input" placeholder="1. Número..." aria-label="Primer número">
+            <input type="number" id="valor2" class="input" placeholder="2. Número..." aria-label="Segundo número">
+            
             <button type="button" class="button" onclick="sumar()" aria-label="Sumar">Sumar</button>
             <button type="button" class="button" onclick="restar()" aria-label="Restar">Restar</button>
             <button type="button" class="button" onclick="multiplicar()" aria-label="Multiplicar">Multiplicar</button>
             <button type="button" class="button" onclick="dividir()" aria-label="Dividir">Dividir</button>
-            <button type="button" class="igual" id="borrar" onclick="limpiar()" aria-label="Borrar">Borrar</button>
+            <button type="button" class="borrar" id="borrar" onclick="limpiar()" aria-label="Borrar">Borrar</button>
           </div>
         </form>
       </div>

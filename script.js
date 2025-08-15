@@ -10,7 +10,7 @@ function sumar() {
     let yVal = document.getElementById("valor2").value;
 
     if (xVal === "" || yVal === "") {
-        document.getElementById('resultado').value = "Ingresa ambos números";
+        document.getElementById('resultado').value = "Ingresa 2 números";
         return;
     }
 
@@ -28,7 +28,7 @@ function restar() {
     let yVal = document.getElementById("valor2").value;
 
     if (xVal === "" || yVal === "") {
-        document.getElementById('resultado').value = "Ingresa ambos números";
+        document.getElementById('resultado').value = "Ingresa 2 números";
         return;
     }
 
@@ -46,7 +46,7 @@ function multiplicar() {
     let yVal = document.getElementById("valor2").value;
 
     if (xVal === "" || yVal === "") {
-        document.getElementById('resultado').value = "Ingresa ambos números";
+        document.getElementById('resultado').value = "Ingresa 2 números";
         return;
     }
 
@@ -64,7 +64,7 @@ function dividir() {
     let yVal = document.getElementById("valor2").value;
 
     if (xVal === "" || yVal === "") {
-        document.getElementById('resultado').value = "Ingresa ambos números";
+        document.getElementById('resultado').value = "Ingresa 2 números";
         return;
     }
 
@@ -72,12 +72,12 @@ function dividir() {
     let y = Number(yVal);
 
     if (y === 0) {
-        document.getElementById('resultado').value = "No se puede dividir por cero";
+        document.getElementById('resultado').value = "Math ERROR";
         return;
     }
 
     let cociente = x / y;
-    document.getElementById('resultado').value = cociente;
+    document.getElementById('resultado').value = cociente.toFixed(4);
     return cociente;
 }
 

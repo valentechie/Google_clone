@@ -1,37 +1,37 @@
 # 🔢 Calculadora Web
 
-[![GPL-3.0 License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Language](https://img.shields.io/badge/JavaScript-yellow)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
 
 ---
 
 ## 📚 Índice
-- [Introducción](#-introduction)
-- [Demostración](#-demo)
-- [Requisitos](#-requirements)
-- [Instalación](#-installation)
-- [Uso](#-usage)
-- [Resumen de archivos](#-file-overview)
-- [Contexto del proyecto](#-project-context)
-- [Contribuciones](#-contributing)
-- [Licencia](#-license)
+- [Introducción](#-introducción)
+- [Demostración](#-demostración)
+- [Requisitos](#-requisitos)
+- [Instalación](#-instalación)
+- [Uso](#-uso)
+- [Resumen de archivos](#-resumen-de-archivos)
+- [Contexto del proyecto](#-contexto-del-proyecto)
+- [Contribuciones](#-contribuciones)
+- [Licencia](#-licencia)
 
 ---
 
 ## 🚀 Introducción
 
-Esta es una calculadora web desarrollada con **JavaScript**, **HTML** y **CSS**.  
-Permite realizar operaciones matemáticas básicas: suma, resta, multiplicación y división, mostrando el resultado en una pantalla interactiva.  
+Esta es una calculadora web desarrollada con **JavaScript**, **HTML** y **CSS**. Permite realizar operaciones matemáticas básicas: suma, resta, multiplicación y división, mostrando el resultado en una pantalla interactiva.  
+
 El diseño es responsivo y colorido, pensado para ser amigable y fácil de usar.
 
 ---
 
 ## 🎬 Demostración
 
-![demo-calculadora]()
+![Demo Calculadora](media/demo.gif)
 
-Puedes probar la calculadora abriendo el archivo `index.html` en tu navegador.
+👉 Prueba la calculadora en línea [aquí](https://valentechie.github.io/calculadora/)
 
 ---
 
@@ -46,17 +46,15 @@ Puedes probar la calculadora abriendo el archivo `index.html` en tu navegador.
 
 **1️⃣ Clona el repositorio:**
 ```bash
-git clone https://github.com/valentechie/calculadora-js.git
+git clone https://github.com/valentechie/calculadora.git
 ```
 
 **2️⃣ Entra en la carpeta del proyecto:**
 ```bash
-cd calculadora-js
+cd calculadora
 ```
 
-**3️⃣ No es necesario compilar. Sólo abre el archivo HTML:**
-
-**4️⃣ Ejecuta la calculadora:**
+**3️⃣ Ejecuta la calculadora:**
 ```bash
 # En sistemas operativos con entorno gráfico:
 # Haz doble click en index.html
@@ -70,31 +68,33 @@ start index.html      # Windows
 
 ## 🕹️ Uso
 
-1. Ingresa los dos números en los campos correspondientes.
-2. Haz clic en el botón de la operación que deseas realizar:
+- Ingresa los dos números en los campos correspondientes.
+- Haz clic en el botón de la operación que deseas realizar:
    - **Sumar**
    - **Restar**
    - **Multiplicar**
    - **Dividir**
-3. El resultado aparecerá en la pantalla rosada.
-4. Puedes borrar los campos y el resultado con el botón **Borrar**.
+- El resultado aparecerá en la pantalla rosada.
+- Puedes borrar los campos y el resultado con el botón **Borrar**.
 
 ---
 
 ## 📁 Resumen de archivos
 
-- `index.html` : Estructura principal de la calculadora y tarjeta de presentación.
-- `style.css`  : Estilos visuales y responsivos, colores y formato de botones, inputs y pantalla.
-- `script.js`  : Funciones de suma, resta, multiplicación, división y reset.
-- `media/fondo.png` : Imagen decorativa para la tarjeta.
-- `media/img.png`   : Imagen de fondo en la tarjeta (opcional).
+- **`index.html`** : Estructura principal de la calculadora y tarjeta de presentación.
+- **`style.css`**  : Estilos visuales y responsivos, colores y formato de botones, inputs y pantalla.
+- **`script.js`**  : Funciones de suma, resta, multiplicación, división y reset.
+- **`media/fondo.png`** : Imagen decorativa para la tarjeta.
+- **`media/img.png`**   : Imagen de fondo en la tarjeta.
 
 ---
 
 ## 🎓 Contexto del proyecto
 
-Este proyecto fue realizado como parte de la formación en el **Club de Otoño 2023**, siguiendo la guía de los mentores.  
+Este proyecto fue realizado como parte de la formación en el **Club BeeReal virtual - Edición otoño 2023**, siguiendo la guía de los mentores.  
 El objetivo es reforzar conocimientos de desarrollo web, lógica de programación y diseño visual con tecnologías modernas y accesibles.
+
+Agradezco a los mentores y compañeras del **Club de Chicas Programadoras** por su apoyo y guía.
 
 ---
 
