@@ -36,21 +36,14 @@
         <form id="myform" autocomplete="off">
           <!-- Pantalla donde se muestra el resultado, solo lectura -->
           <input type="text" id="resultado" class="result" aria-label="Resultado" readonly>
-          <!-- Campo para ingresar el primer número -->
           <input type="number" id="valor1" class="input" placeholder="1. Número..." aria-label="Primer número">
-          <!-- Campo para ingresar el segundo número -->
           <input type="number" id="valor2" class="input" placeholder="2. Número..." aria-label="Segundo número">
           
-          <!-- Contenedor de los botones de operación -->
           <div class="botones">
-            <!-- Botón para sumar, ejecuta la función sumar() al hacer clic -->
-            <button type="button" class="button" id="+" onclick="sumar()" aria-label="Sumar">Sumar</button>
-            <!-- Botón para restar, ejecuta la función resta() al hacer clic -->
-            <button type="button" class="button" id="restar" onclick="restar()" aria-label="Restar">Restar</button>
-            <!-- Botón para multiplicar, ejecuta la función multiplicar() al hacer clic -->
-            <button type="button" class="button" id="multiplicar" onclick="multiplicar()" aria-label="Multiplicar">Multiplicar</button>
-            <!-- Botón para dividir, ejecuta la función dividir() al hacer clic -->
-            <button type="button" class="button" id="dividir" onclick="dividir()" aria-label="Dividir">Dividir</button>
+            <button type="button" class="button" onclick="sumar()" aria-label="Sumar">Sumar</button>
+            <button type="button" class="button" onclick="restar()" aria-label="Restar">Restar</button>
+            <button type="button" class="button" onclick="multiplicar()" aria-label="Multiplicar">Multiplicar</button>
+            <button type="button" class="button" onclick="dividir()" aria-label="Dividir">Dividir</button>
             <!-- Botón para borrar los campos y el resultado, ejecuta limpiar() -->
             <button type="button" class="igual" id="borrar" onclick="limpiar()" aria-label="Borrar">Borrar</button>
           </div>
