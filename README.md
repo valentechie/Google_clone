@@ -1,4 +1,4 @@
-# Calculadora Web
+# 🔢 Calculadora Web
 
 [![GPL-3.0 License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 ![Language](https://img.shields.io/badge/JavaScript-yellow)
@@ -6,20 +6,20 @@
 
 ---
 
-## 📚 Table of Contents
-- [Introduction](#-introduction)
-- [Demo](#-demo)
-- [Requirements](#-requirements)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [File Overview](#-file-overview)
-- [Project Context](#-project-context)
-- [Contributing](#-contributing)
-- [License](#-license)
+## 📚 Índice
+- [Introducción](#-introduction)
+- [Demostración](#-demo)
+- [Requisitos](#-requirements)
+- [Instalación](#-installation)
+- [Uso](#-usage)
+- [Resumen de archivos](#-file-overview)
+- [Contexto del proyecto](#-project-context)
+- [Contribuciones](#-contributing)
+- [Licencia](#-license)
 
 ---
 
-## 🚀 Introduction
+## 🚀 Introducción
 
 Esta es una calculadora web desarrollada con **JavaScript**, **HTML** y **CSS**.  
 Permite realizar operaciones matemáticas básicas: suma, resta, multiplicación y división, mostrando el resultado en una pantalla interactiva.  
@@ -27,7 +27,7 @@ El diseño es responsivo y colorido, pensado para ser amigable y fácil de usar.
 
 ---
 
-## 🎬 Demo
+## 🎬 Demostración
 
 ![demo-calculadora]()
 
@@ -35,14 +35,14 @@ Puedes probar la calculadora abriendo el archivo `index.html` en tu navegador.
 
 ---
 
-## 🛠️ Requirements
+## 🛠️ Requisitos
 
 - Navegador web moderno (Chrome, Firefox, Edge, Safari, etc.)
 - No requiere instalación de dependencias ni compilación
 
 ---
 
-## 📦 Installation
+## 📦 Instalación
 
 **1️⃣ Clona el repositorio:**
 ```bash
@@ -68,7 +68,7 @@ start index.html      # Windows
 
 ---
 
-## 🕹️ Usage
+## 🕹️ Uso
 
 1. Ingresa los dos números en los campos correspondientes.
 2. Haz clic en el botón de la operación que deseas realizar:
@@ -81,7 +81,7 @@ start index.html      # Windows
 
 ---
 
-## 📁 File Overview
+## 📁 Resumen de archivos
 
 - `index.html` : Estructura principal de la calculadora y tarjeta de presentación.
 - `style.css`  : Estilos visuales y responsivos, colores y formato de botones, inputs y pantalla.
@@ -91,14 +91,14 @@ start index.html      # Windows
 
 ---
 
-## 🎓 Project Context
+## 🎓 Contexto del proyecto
 
 Este proyecto fue realizado como parte de la formación en el **Club de Otoño 2023**, siguiendo la guía de los mentores.  
 El objetivo es reforzar conocimientos de desarrollo web, lógica de programación y diseño visual con tecnologías modernas y accesibles.
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contribuciones
 
 ¡Las contribuciones son bienvenidas!  
 - Haz fork a este repositorio  
@@ -107,6 +107,6 @@ El objetivo es reforzar conocimientos de desarrollo web, lógica de programació
 
 ---
 
-## 📄 License
+## 📄 Licencia
 
 Este proyecto está bajo la licencia [MIT](LICENSE).
