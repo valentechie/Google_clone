@@ -86,8 +86,8 @@ start index.html      # Windows
 - **`index.html`** : Estructura principal de la calculadora y tarjeta de presentación.
 - **`style.css`**  : Estilos visuales y responsivos, colores y formato de botones, inputs y pantalla.
 - **`script.js`**  : Funciones de suma, resta, multiplicación, división y reset.
-- **`media/fondo.png`** : Imagen decorativa para la tarjeta.
-- **`media/img.png`**   : Imagen de fondo en la tarjeta.
+- **`media/fondo.png`** : Imagen de fondo de pantalla.
+- **`media/img.png`**   : Imagen dentro de la tarjeta.
 
 ---
 
